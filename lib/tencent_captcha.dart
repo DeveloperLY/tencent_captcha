@@ -1,3 +1,5 @@
+library tencent_captcha;
+
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
@@ -109,7 +111,6 @@ class _TencentCaptchaViewState extends State<TencentCaptchaView> {
               callback: (args) {
                 // 加载成功, 更新webview的frame
                 _viewSize = args.first['sdkView']['width'];
-                print(_viewSize);
                 if (mounted) {
                   setState(() {});
                 }
